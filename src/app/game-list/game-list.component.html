@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <!-- Cambiar ion-title por ion-buttons para tener un botón de regreso -->
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/home']" routerDirection="back">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <!-- Mantener el título "Wiki" en ion-title -->
+    <ion-title style="color: #f1c40f;">Wiki</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="banner">
+    <h1>Enciclopedia de Juegos</h1>
+  </div>
+
+  <div *ngIf="games.length === 0" class="no-data">
+    <p>No hay juegos disponibles en este momento.</p>
+  </div>
+
+  <div class="games-container">
+    <ion-grid>
+      <!-- Mostrar tarjetas en columnas en dispositivos de tamaño mediano y grande -->
+      <ion-row class="ion-hide-sm-down">
+        <ion-col size="6" size-md="4" size-lg="3" *ngFor="let game of games">
+          <ion-card class="game-card">
+            <img [src]="game.background_image" class="card-img-top" alt="...">
+            <ion-card-content>
+              <ion-card-title>{{ game.name }}</ion-card-title>
+              <p>Fecha de lanzamiento: {{ game.released }}</p>
+              <p>Géneros: {{ getGenres(game) }}</p>
+              <p>Plataformas: {{ getPlatforms(game) }}</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+      <!-- Mostrar tarjetas en una lista en dispositivos pequeños (teléfonos) -->
+      <ion-list lines="none" class="ion-hide-md-up">
+        <ion-item *ngFor="let game of games" class="game-list-item">
+          <ion-thumbnail slot="start">
+            <img [src]="game.background_image" alt="...">
+          </ion-thumbnail>
+          <ion-label>
+            <h2>{{ game.name }}</h2>
+            <p>Fecha de lanzamiento: {{ game.released }}</p>
+            <p>Géneros: {{ getGenres(game) }}</p>
+            <p>Plataformas: {{ getPlatforms(game) }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-grid>
+  </div>
+
+  <div class="pagination-buttons">
+    <ion-button fill="outline" color="success" [disabled]="currentPage === 1" (click)="previousPage()">Anterior</ion-button>
+    <ion-button fill="outline" color="success" [disabled]="currentPage === totalPages" (click)="nextPage()">Siguiente</ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,71 @@
+ion-content {
+  --background: #121212; /* Fondo oscuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 16px; /* Espacio alrededor del contenido */
+}
+
+ion-list {
+  width: 100%;
+  max-width: 400px;
+  background: #1e1e1e; /* Fondo oscuro para el listado */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  margin: 40px auto 0; /* Centrado horizontal */
+}
+
+ion-item {
+  --padding-start: 0; /* Eliminar padding izquierdo */
+  --padding-end: 0; /* Eliminar padding derecho */
+  --inner-padding-end: 0; /* Eliminar padding interno derecho */
+  --inner-padding-start: 0; /* Eliminar padding interno izquierdo */
+  margin-bottom: 30px;
+  --background: transparent; /* Fondo transparente para los items */
+  display: flex;
+  align-items: center;
+}
+
+ion-thumbnail {
+  img {
+    border-radius: 10px;
+  }
+}
+
+ion-label {
+  color: #ffff00; /* Amarillo */
+  margin-left: 10px;
+  flex: 1;
+  display: block;
+}
+
+ion-button {
+  --background: #28a745; /* Verde */
+  color: #ffffff; /* Blanco para el texto del botón */
+  width: 100px;
+  margin-left: auto; /* Mover el botón al final del item */
+}
+
+ion-button[expand="block"] {
+  width: 100%;
+  margin-top: 20px; /* Espacio superior para separar el botón */
+}
+
+ion-thumbnail,
+ion-label {
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.compra-exitosa {
+  color: #28a745; /* Verde para el texto de éxito */
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 20px; /* Espacio superior para separar el mensaje */
+}
+
+ion-title {
+  color: #eeff00; /* Cambia el color del título a rojo */
+}
+

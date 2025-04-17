@@ -1,0 +1,68 @@
+ion-content {
+    --background: #242525d0; /* Fondo gris claro */
+    max-width: 1800px; /* Limita el ancho máximo del ion-content */
+    margin: 0 auto; /* Centra el contenido en la página */
+  }
+  
+  .banner {
+    background-color: #0cb929d5; /* Azul primario */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  .banner h1 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .no-data {
+    text-align: center;
+    padding: 20px;
+    color: gray;
+  }
+  
+  ion-card {
+    margin: 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #00ff80cb; /* Añadir un borde a la tarjeta */
+    background-color: #3c3d3d65; /* Fondo blanco para diferenciar del fondo general */
+  }
+  
+  ion-card-header {
+    padding: 16px;
+    border-bottom: 1px solid #00ff80cb; /* Añadir un borde inferior para separar el encabezado del contenido */
+  }
+  
+  ion-img {
+    width: 100%; /* Ajustar la imagen al ancho completo del ion-card */
+    height: 300px; /* Establecer una altura fija para la imagen */
+    object-fit: contain; /* Ajustar la imagen dentro del contenedor sin distorsionarla */
+    border-top-left-radius: 10px; /* Añade bordes redondeados en la esquina superior izquierda */
+    border-top-right-radius: 10px; /* Añade bordes redondeados en la esquina superior derecha */
+    border-bottom: 1px solid #00ff80cb; /* Añadir un borde inferior a la imagen */
+  }
+  
+  ion-card-title {
+    font-size: 1.2em;
+    color: var(--ion-color-dark);
+  }
+  
+  .precio {
+    font-weight: bold;
+    color: #0cb929d5; /* Azul primario */
+    margin-top: 8px;
+  }
+  
+  ion-button {
+    --background: #00ff80cb; /* Color de fondo del botón */
+    --color: #ffffff; /* Color del texto del botón */
+    --border-radius: 5px; /* Radio de borde del botón */
+    --box-shadow: none; /* Eliminar sombra del botón si no se necesita */
+  }
+  

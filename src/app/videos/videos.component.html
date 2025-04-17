@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/home']" routerDirection="back">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title style="color: #f1c40f;">Gameplays y Noticias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let video of videos">
+        <div class="card mb-4">
+          <video class="card-img-top" preload="metadata" controls width="100%">
+            <source [src]="video.low_url + '#t=15'" type="video/mp4">
+            <!-- Añade más fuentes si es necesario -->
+          </video>
+          <div class="card-body">
+            <h5 class="card-title">{{ video.title }}</h5>
+            <p class="card-text">{{ video.deck }}</p>
+            <a [href]="video.site_detail_url" class="btn btn-custom" target="_blank">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination-container">
+      <ion-button (click)="previousPage()" [disabled]="currentPage <= 1" class="custom-btn">
+        Anterior
+      </ion-button>
+      <ion-button (click)="nextPage()" [disabled]="currentPage >= totalPages" class="custom-btn">
+        Siguiente
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

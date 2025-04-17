@@ -1,0 +1,13 @@
+{
+  "name": "moviapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "proxies": [
+    {
+      "path": "/api/proxy",
+      "proxyUrl": "http://www.gamespot.com/api/videos/"
+    }
+  ]
+}

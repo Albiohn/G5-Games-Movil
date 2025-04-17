@@ -1,0 +1,72 @@
+ion-content {
+  --background: #121212; /* Fondo oscuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 16px; /* Espacio alrededor del contenido */
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  background: #1e1e1e; /* Fondo oscuro para el formulario */
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  margin: 40px auto 0; /* Centrado horizontal */
+  opacity: 5; /* Inicialmente oculto */
+  transition: opacity 1s; /* Transición para la animación de opacidad */
+}
+
+.form-container.show-form {
+  opacity: 1; /* Mostrar el contenedor cuando se añade la clase show-form */
+}
+
+
+form {
+  width: 100%;
+}
+
+ion-item {
+  width: 100%;
+  --padding-start: 0; /* Eliminar padding izquierdo */
+  --padding-end: 0; /* Eliminar padding derecho */
+  --inner-padding-end: 0; /* Eliminar padding interno derecho */
+  --inner-padding-start: 0; /* Eliminar padding interno izquierdo */
+  margin-bottom: 30px;
+  --background: transparent; /* Fondo transparente para los items */
+  position: relative; /* Establecer posición relativa */
+}
+
+ion-label {
+  color: #ffff00; /* Amarillo */
+  display: block; /* Mostrar como bloque para evitar superposición */
+  position: absolute; /* Posición absoluta */
+  top: -11px; /* Mover hacia arriba */
+}
+
+ion-input {
+  --background: #333; /* Fondo oscuro para los inputs */
+  --placeholder-color: #888888; /* Color del placeholder */
+  color: #ffffff; /* Texto blanco */
+  padding: 15px; /* Espaciado interno */
+  border-radius: 5px;
+  margin-top: 20px; /* Espacio para separar el label y el input */
+}
+
+ion-button {
+  --background: #28a745; /* Verde */
+  color: #ffffff; /* Blanco para el texto del botón */
+  width: 100%;
+  margin-top: 20px; /* Espacio superior para separar los botones */
+}
+
+ion-header {
+  ion-toolbar {
+    background: #1e1e1e; /* Fondo oscuro para el toolbar */
+    ion-title {
+      color: #ffff00; /* Amarillo */
+    }
+  }
+}

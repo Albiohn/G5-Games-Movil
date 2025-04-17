@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start"> <!-- Alinea el botón a la izquierda -->
+      <ion-button (click)="volverAlInicio()"> <!-- Maneja el evento click -->
+        <ion-icon name="arrow-back"></ion-icon> <!-- Icono de flecha hacia atrás -->
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Perfil de Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card *ngIf="usuario$ | async as usuario">
+    <ion-card-header>
+      <ion-card-title>Información del Usuario</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Nombre de usuario:</ion-label>
+        <ion-input type="text" value="{{ usuario.username }}" readonly></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Correo electrónico:</ion-label>
+        <ion-input type="email" value="{{ usuario.email }}" readonly></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

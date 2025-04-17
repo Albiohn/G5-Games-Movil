@@ -1,0 +1,19 @@
+.error-container {
+    text-align: center;
+    margin-top: 50px;
+  
+    h1 {
+      font-size: 48px;
+      color: var(--ion-color-danger);
+    }
+  
+    p {
+      font-size: 18px;
+      color: var(--ion-color-medium);
+    }
+  
+    ion-button {
+      margin-top: 20px;
+    }
+  }
+  

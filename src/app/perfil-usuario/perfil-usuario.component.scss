@@ -1,0 +1,35 @@
+ion-header {
+    ion-toolbar {
+      // Fondo oscuro para el banner
+      --background: #1a1a1a;
+      ion-title {
+        // Letra amarilla para el título
+        color: #ffff00;
+        // Estilo de botón para el título
+        cursor: pointer;
+        // Alineación del texto al centro verticalmente
+        display: flex;
+        align-items: center;
+        // Espaciado para que el texto no esté pegado a los bordes
+        padding-left: 16px;
+        padding-right: 16px;
+        // Espaciado adicional a la derecha para separarlo de los bordes
+        margin-right: 8px;
+      }
+    }
+  }
+  
+  ion-content {
+    // Fondo negro
+    --background: #000000;
+    // Centrar el contenido verticalmente
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ion-card-header {
+    // Ajustar el margen inferior para que no quede tan pegado al contenido
+    margin-bottom: 16px;
+  }
+  

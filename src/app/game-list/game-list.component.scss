@@ -1,0 +1,101 @@
+ion-content {
+    --background: url('/assets/fondos/d3.jpg') no-repeat center center / cover;
+    --ion-background-color: #242525d0; /* Fondo gris claro */
+    max-width: 1800px; /* Limita el ancho máximo del ion-content */
+    margin: 0 auto; /* Centra el contenido en la página */
+  
+    .banner {
+      background-color: #0cb929d5; /* Azul primario */
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+  
+      h1 {
+        margin: 0;
+        font-size: 1.5em;
+        color: #f1c40f; /* Amarillo */
+      }
+    }
+  
+    .no-data {
+      text-align: center;
+      padding: 20px;
+      color: gray;
+    }
+  
+    .game-card {
+      margin: 16px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      border: 1px solid #00ff80cb; /* Añadir un borde a la tarjeta */
+      background-color: #3c3d3d65; /* Fondo blanco para diferenciar del fondo general */
+  
+      ion-card-content {
+        ion-card-title {
+          font-size: 1.2em;
+          color: var(--ion-color-dark);
+        }
+      }
+  
+      ion-img {
+        width: 100%; /* Ajustar la imagen al ancho completo del ion-card */
+        height: 300px; /* Establecer una altura fija para la imagen */
+        object-fit: cover; /* Ajustar la imagen dentro del contenedor sin distorsionarla */
+        border-top-left-radius: 10px; /* Añade bordes redondeados en la esquina superior izquierda */
+        border-top-right-radius: 10px; /* Añade bordes redondeados en la esquina superior derecha */
+        border-bottom: 1px solid #00ff80cb; /* Añadir un borde inferior a la imagen */
+      }
+  
+      .precio {
+        font-weight: bold;
+        color: #0cb929d5; /* Azul primario */
+        margin-top: 8px;
+      }
+  
+      ion-button {
+        --background: #00ff80cb; /* Color de fondo predeterminado del botón */
+        --color: #ffffff; /* Color del texto predeterminado del botón */
+        --border-radius: 5px; /* Radio de borde predeterminado del botón */
+        --box-shadow: none; /* Eliminar sombra predeterminada del botón si no se necesita */
+      }
+    }
+  
+    .pagination-buttons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 20px;
+  
+      ion-button {
+        --background: #28a745; /* Color success de los botones de paginación */
+        --color: #ffffff; /* Color del texto */
+        --border-radius: 5px; /* Radio de borde */
+        --box-shadow: none; /* Sombra */
+      }
+    }
+  
+    ion-toolbar {
+      ion-title {
+        color: #f1c40f; /* Amarillo */
+      }
+    }
+
+
+  }
+  
+  .next-button {
+    margin: 20px auto; /* Ajustar el margen */
+    display: block; /* Hacer que el botón sea un bloque para ocupar el ancho */
+  }
+  
+  .game-list-item {
+    border: 1px solid #00ff80cb; /* Añadir un borde verde similar al de las tarjetas en dispositivos de tamaño mediano y grande */
+    border-radius: 10px; /* Ajustar el radio de borde para que sea similar al de las tarjetas */
+    margin-bottom: 10px; /* Ajustar el margen inferior para separar las tarjetas */
+    padding: 10px; /* Añadir relleno para mejorar el espacio alrededor del contenido */
+  }
+  

@@ -1,0 +1,72 @@
+// Estilos específicos para dispositivos pequeños (móviles)
+@media (max-width: 576px) {
+    .card {
+      width: 100%; // Ajusta el ancho de la tarjeta al 100% en dispositivos pequeños
+    }
+  
+    .btn-custom {
+      width: 100%; // Ajusta el ancho del botón al 100% en dispositivos pequeños
+    }
+  }
+  
+  // Estilos para el botón "Ver más"
+  .btn-custom {
+    background-color: #0cb929d5; /* Color verde */
+    color: #fff; /* Texto blanco */
+    border: none;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #0cb929; /* Color verde más oscuro al hacer hover */
+    }
+  }
+  
+  // Estilos para el contenido del ion-content
+  ion-content {
+    --background: #242525d0; /* Fondo gris claro */
+    max-width: 100%; /* Ajusta el ancho máximo del ion-content al 100% del contenedor padre */
+    margin: 0 auto; /* Centra el contenido en la página */
+    padding: 10px; /* Añade un espacio interno */
+  }
+  
+  // Estilos para los botones de paginación
+  .pagination-container {
+    ion-button {
+      --background: #00ff80cb; /* Color de fondo del botón */
+      --color: #ffffff; /* Color del texto del botón */
+      --border-radius: 5px; /* Radio de borde del botón */
+      margin: 0 5px;
+      cursor: pointer;
+  
+      &[disabled] {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+    }
+  
+    .custom-btn {
+      display: inline-block;
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      user-select: none;
+      border: 1px solid transparent;
+      border-radius: 0.25rem;
+      background-color: #0cb929d5; /* Color verde */
+      color: #fff; /* Texto blanco */
+      text-decoration: none;
+      transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  
+      &:hover,
+      &:focus {
+        background-color: #0cb929; /* Color verde más oscuro al hacer hover o focus */
+        color: #fff;
+      }
+    }
+  }
+  

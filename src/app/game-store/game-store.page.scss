@@ -1,0 +1,60 @@
+.banner {
+    background-color: #1e1e1e; /* Color de fondo del banner */
+    color: #ffff00; /* Color del texto */
+    text-align: center; /* Alinear texto al centro */
+    padding: 20px 0; /* Añadir espacio alrededor del texto */
+    font-size: 1.5em; /* Tamaño de fuente */
+    border-top-left-radius: 10px; /* Añadir bordes redondeados en la esquina superior izquierda */
+    border-top-right-radius: 10px; /* Añadir bordes redondeados en la esquina superior derecha */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Añadir sombra */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+  }
+  
+  
+  .content {
+    --background: #121212; /* Color de fondo del contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 16px; /* Espacio alrededor del contenido */
+  }
+  
+  .category-list {
+    width: 100%; /* Ancho de la lista */
+    max-width: 400px; /* Ancho máximo de la lista */
+    margin: 40px auto 0; /* Centrar horizontalmente y agregar espacio superior */
+    padding: 20px; /* Añadir espacio alrededor de la lista */
+    background-color: #333; /* Color de fondo del contenedor */
+    border-radius: 20px; /* Añadir bordes redondeados al contenedor */
+  }
+  
+  
+  ion-item {
+    --background: #0ce63bc0; /* Color de fondo de los botones */
+    --border-color: transparent; /* Color del borde */
+    --color: #ffffff; /* Color del texto */
+    border-radius: 20px; /* Añadir bordes redondeados */
+    margin-bottom: 10px; /* Espacio entre botones */
+  }
+  
+  ion-item:hover {
+    --background: #b9da03; /* Cambiar color de fondo al pasar el cursor */
+  }
+  
+  ion-button {
+    --background: #28a745; /* Verde */
+    color: #ffffff; /* Blanco para el texto del botón */
+    width: 100%;
+    margin-top: 20px; /* Espacio superior para separar los botones */
+  }
+  
+  ion-header {
+    ion-toolbar {
+      background: #1e1e1e; /* Fondo oscuro para el toolbar */
+      ion-title {
+        color: #ffff00; /* Amarillo */
+      }
+    }
+  }
+  

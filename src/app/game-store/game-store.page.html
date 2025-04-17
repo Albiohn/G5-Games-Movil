@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title class="banner" (click)="navigateToHome()"> <!-- Agregamos la clase "banner" al título y el evento de clic -->
+      Lista de Categorias
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content">
+  <ion-list lines="none" class="category-list">
+    <ion-item button (click)="navigateToCategory('accion')">
+      <ion-label>Acción</ion-label>
+    </ion-item>
+    <ion-item button (click)="navigateToCategory('aventura')">
+      <ion-label>Aventura</ion-label>
+    </ion-item>
+    <ion-item button (click)="navigateToCategory('rol')">
+      <ion-label>Rol</ion-label>
+    </ion-item>
+    <ion-item button (click)="navigateToCategory('rpg')">
+      <ion-label>RPG</ion-label>
+    </ion-item>
+    <ion-item button (click)="navigateToCategory('shooter')">
+      <ion-label>Shooter</ion-label>
+    </ion-item>
+    <ion-item button (click)="navigateToCategory('terror')">
+      <ion-label>Terror</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

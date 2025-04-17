@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="dark"> <!-- Asegúrate de usar color="dark" -->
+    <ion-title style="color: yellow;">Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding" style="--background: url('/assets/fondos/d3.jpg') no-repeat center center / cover;">
+  <div class="banner">
+    <h1>Bienvenido a G5 Games</h1>
+    <p>Explora nuestra colección de videojuegos y encuentra el juego perfecto para ti.</p>
+    
+    <!-- Botones visibles solo cuando el usuario no ha iniciado sesión -->
+    <ion-button color="success" *ngIf="!isLoggedIn()" (click)="navigateTo('register')">Registrarse</ion-button>
+    <ion-button color="success" *ngIf="!isLoggedIn()" (click)="navigateTo('login')">Iniciar Sesión</ion-button>
+
+    <!-- Botones visibles para todos los usuarios -->
+    <ion-button color="success" (click)="navigateTo('game-store')">Categorías</ion-button>
+    <ion-button color="success" (click)="navigateTo('game-list')">Ver Juegos</ion-button>
+    <ion-button color="success" (click)="navigateTo('videos')">Ver Videos</ion-button>
+    <ion-button color="success" (click)="navigateTo('carrito')">Carro</ion-button>
+
+    <!-- Botones visibles solo cuando el usuario ha iniciado sesión -->
+    <ion-button color="success" *ngIf="isLoggedIn()" (click)="navigateTo('perfil')">Mi Perfil</ion-button>
+    <ion-button color="danger" *ngIf="isLoggedIn()" (click)="logout()">Cerrar Sesión</ion-button>
+  </div>
+</ion-content>

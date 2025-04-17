@@ -1,0 +1,44 @@
+/* Estilos para los botones en JuegoListComponent */
+
+/* Estilos para el contenedor de los botones */
+.button-container {
+    margin-top: 20px;
+}
+  
+/* Estilos para los botones de acción */
+.action-button {
+    margin-right: 10px;
+}
+  
+/* Estilos para los botones de edición y eliminación */
+.edit-button,
+.delete-button {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #0d0; /* Verde */
+    color: #fff; /* Texto blanco */
+}
+
+.delete-button {
+    background-color: #1f2937; /* Negro */
+    color: #fff; /* Texto blanco */
+}
+
+/* Estilos adicionales */
+ion-header {
+    background-color: #1f2937; /* Negro */
+}
+
+ion-title {
+    color: #0d0; /* Verde */
+}
+
+ion-content {
+    background-color: #000; /* Negro */
+    color: #fff; /* Texto blanco */
+}
